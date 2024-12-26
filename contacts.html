@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Будущие звезды футбола</title>
+    <!-- Подключаем Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Стили для страницы контактов */
+        .contact-section {
+            padding: 50px 0;
+        }
+
+        .contact-info {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            margin-top: 30px;
+        }
+
+        .form-control {
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Будущие звезды футбола</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="news.html">Новости</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Секция Контакты -->
+    <div class="container contact-section">
+        <h1 class="display-4 text-center">Контакты</h1>
+        <p class="lead text-center">Если у вас есть вопросы или предложения, не стесняйтесь связаться с нами!</p>
+
+        <!-- Контактная информация -->
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Наша контактная информация</h3>
+                <p class="contact-info">
+                    <strong>Email:</strong> info@footballstars.com<br>
+                    <strong>Телефон:</strong> +7 (123) 456-78-90<br>
+                    <strong>Адрес:</strong> Москва, ул. Футбольная, д. 1
+                </p>
+            </div>
+
+            <!-- Форма обратной связи -->
+            <div class="col-md-6 contact-form">
+                <h3>Напишите нам</h3>
+                <form>
+                    <!-- Имя -->
+                    <div class="mb-3">
+                        <label for="first-name" class="form-label">Имя</label>
+                        <input type="text" class="form-control" id="first-name" placeholder="Введите ваше имя" required>
+                    </div>
+
+                    <!-- Фамилия -->
+                    <div class="mb-3">
+                        <label for="last-name" class="form-label">Фамилия</label>
+                        <input type="text" class="form-control" id="last-name" placeholder="Введите вашу фамилию" required>
+                    </div>
+
+                    <!-- Электронная почта -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Электронная почта</label>
+                        <input type="email" class="form-control" id="email" placeholder="Введите ваш email" required>
+                    </div>
+
+                    <!-- Номер телефона -->
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Номер телефона</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Введите ваш номер телефона" required>
+                    </div>
+
+                    <!-- Пол (переключатели) -->
+                    <div class="mb-3">
+                        <label class="form-label">Пол</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                            <label class="form-check-label" for="male">Мужской</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                            <label class="form-check-label" for="female">Женский</label>
+                        </div>
+                    </div>
+
+                    <!-- Тема -->
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Тема</label>
+                        <select class="form-select" id="subject" required>
+                            <option value="">Выберите тему</option>
+                            <option value="general">Общий вопрос</option>
+                            <option value="support">Поддержка</option>
+                            <option value="partnership">Партнерство</option>
+                        </select>
+                    </div>
+
+                    <!-- Текстовое сообщение -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Текстовое сообщение</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Напишите ваше сообщение" required></textarea>
+                    </div>
+
+                    <!-- Кнопка отправки -->
+                    <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- Подвал -->
+    <footer>
+        <p>&copy; 2024 Будущие звезды футбола. Все права защищены.</p>
+    </footer>
+
+</body>
+
+</html>

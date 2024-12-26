@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости - Будущие звезды футбола</title>
+    <!-- Подключаем Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .news-item {
+            margin-bottom: 30px;
+        }
+
+        .news-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .news-description {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Будущие звезды футбола</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="news.html">Новости</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Заголовок страницы Новости -->
+    <div class="container text-center my-5">
+        <h1 class="display-4">Новости футбола</h1>
+        <p class="lead">Последние события, новости и достижения молодых футболистов.</p>
+    </div>
+
+    <!-- Секция новостей -->
+    <div class="container">
+        <div class="row">
+            <!-- Новости 1 -->
+            <div class="col-md-4 news-item">
+                <div class="card">
+                    <img src="/img for news/Mbapp.webp" class="card-img-top" alt="Новость 1">
+                    <div class="card-body">
+                        <h5 class="card-title news-title">Новая звезда футбола! Молодой игрок подписал контракт с клубом</h5>
+                        <p class="card-text news-description">Талантливый молодой футболист подписал долгосрочный контракт с одним из крупнейших клубов Европы. Ожидаем его успехов на профессиональном уровне!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Новости 2 -->
+            <div class="col-md-4 news-item">
+                <div class="card">
+                    <img src="/img for news/222.jpg" class="card-img-top" alt="Новость 2">
+                    <div class="card-body">
+                        <h5 class="card-title news-title">Турнир для юных футболистов прошел успешно</h5>
+                        <p class="card-text news-description">Юные таланты показали отличные результаты на международном турнире, завоевав несколько медалей. Мы гордимся их достижениями!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Новости 3 -->
+            <div class="col-md-4 news-item">
+                <div class="card">
+                    <img src="/img for news/images.jpeg" class="card-img-top" alt="Новость 3">
+                    <div class="card-body">
+                        <h5 class="card-title news-title">Подготовка к важным матчам: тренировки будущих звезд</h5>
+                        <p class="card-text news-description">Футболисты молодежных команд готовятся к важным матчам. Тренировки стали интенсивнее, а уровень игры — еще выше.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- Подвал -->
+    <footer>
+        <p>&copy; 2024 Будущие звезды футбола. Все права защищены.</p>
+    </footer>
+
+</body>
+
+</html>
